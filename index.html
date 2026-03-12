@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uyda Karroziyani Kamaytirish Yo'llari - Kimyoviy Yondashuv</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <i class="fas fa-leaf"></i>
+                    <span>EcoDrive</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#bosh">Bosh sahifa</a></li>
+                    <li><a href="#kimyo">Kimyoviy jarayonlar</a></li>
+                    <li><a href="#usullar">Kamaytirish usullari</a></li>
+                    <li><a href="#diagrammalar">Diagrammalar</a></li>
+                    <li><a href="#molecula">3D Molekula</a></li>
+                    <li><a href="#natijalar">Natijalar</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="bosh" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Uyda Karroziyani Kamaytirish Yo'llari</h1>
+                    <p class="hero-subtitle">Kimyoviy jarayonlar va zamonaviy usullar orqali avtomobil chiqindilarini 70% gacha kamayiring</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">70%</span>
+                            <span class="stat-label">Kamroq chiqindi</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">30%</span>
+                            <span class="stat-label">Yoqilg'i tejamkorligi</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50%</span>
+                            <span class="stat-label">Kamroq CO₂</span>
+                        </div>
+                    </div>
+                    <button class="cta-button" onclick="scrollToSection('kimyo')">
+                        <i class="fas fa-flask"></i>
+                        Kimyoviy jarayonlarni o'rganish
+                    </button>
+                </div>
+                <div class="hero-image">
+                    <div class="molecule-animation">
+                        <div class="molecule co2">CO₂</div>
+                        <div class="molecule no">NO</div>
+                        <div class="molecule co">CO</div>
+                        <div class="molecule hc">HC</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kimyo" class="chemistry-section">
+            <div class="container">
+                <h2 class="section-title">Karroziyaga Sabab Bo'luvchi Kimyoviy Jarayonlar</h2>
+                <div class="chemistry-grid">
+                    <div class="chemistry-card">
+                        <div class="card-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3>Yoqilg'i Yonish Reaksiyasi</h3>
+                        <div class="chemical-formula">
+                            C₈H₁₈ + 12.5O₂ → 8CO₂ + 9H₂O
+                        </div>
+                        <p>To'liq yonish jarayonida uglerod dioksidi va suv hosil bo'ladi. Ammo to'liq bo'lmagan yonishda zararli moddalar ajraladi.</p>
+                    </div>
+                    
+                    <div class="chemistry-card">
+                        <div class="card-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3>To'liq Bo'lmagan Yonish</h3>
+                        <div class="chemical-formula">
+                            2C₈H₁₈ + 17O₂ → 16CO + 18H₂O
+                        </div>
+                        <p>Kislorod yetishmasligi uglerod oksidi (CO) hosil qiladi, bu inson salomatligi uchun xavflidir.</p>
+                    </div>
+                    
+                    <div class="chemistry-card">
+                        <div class="card-icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <h3>Azot Oksidlari Hosil Bo'lishi</h3>
+                        <div class="chemical-formula">
+                            N₂ + O₂ → 2NO (yuqori haroratda)
+                        </div>
+                        <p>Yuqori harorat va bosim sharoitida atmosfera azoti kislorod bilan reaksiyaga kirishadi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="usullar" class="methods-section">
+            <div class="container">
+                <h2 class="section-title">Karroziyani Kamaytirish Usullari</h2>
+                <div class="methods-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Motor To'g'ri Sozlash</h3>
+                            <p>Motorning to'g'ri sozlanishi yonish jarayonini optimallashtiradi va zararli chiqindilar miqdorini kamaytiradi.</p>
+                            <ul>
+                                <li>Ignalarni to'g'ri o'rnatish</li>
+                                <li>Klapanlarni sozlash</li>
+                                <li>Havo filtrlarini muntazam almashtirish</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-gas-pump"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Sifatli Yoqilg'i Ishlatish</h3>
+                            <p>Yuqori oktanli va toza yoqilg'i to'liq yonishni ta'minlaydi.</p>
+                            <ul>
+                                <li>95+ oktan benzin</li>
+                                <li>Qo'shimchalarsiz yoqilg'i</li>
+                                <li>Muntazam tank tozalash</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Katalitik Konvertor</h3>
+                            <p>Zararli gazlarni kamroq zararli birikmalarga aylantiradi.</p>
+                            <div class="conversion-formula">
+                                2NO → N₂ + O₂<br>
+                                2CO + O₂ → 2CO₂<br>
+                                CₓHᵧ + (x + y/4)O₂ → xCO₂ + (y/2)H₂O
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="diagrammalar" class="diagrams-section">
+            <div class="container">
+                <h2 class="section-title">Kimyoviy Diagrammalar va Jarayonlar</h2>
+                <div class="diagrams-grid">
+                    <div class="diagram-card">
+                        <h3>Yonish Jarayoni Diagrammasi</h3>
+                        <canvas id="combustionChart"></canvas>
+                    </div>
+                    
+                    <div class="diagram-card">
+                        <h3>Chiqindi Gazlari Tarkibi</h3>
+                        <canvas id="emissionsChart"></canvas>
+                    </div>
+                    
+                    <div class="diagram-card">
+                        <h3>Kamaytirish Natijalari</h3>
+                        <canvas id="reductionChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="chemical-process">
+                    <h3>Katalitik Konvertor Ishlash Prinsipi</h3>
+                    <div class="process-flow">
+                        <div class="process-step input">
+                            <span>Kiruvchi gazlar</span>
+                            <div class="gas-molecules">
+                                <span class="gas">NO</span>
+                                <span class="gas">CO</span>
+                                <span class="gas">HC</span>
+                            </div>
+                        </div>
+                        <div class="process-arrow">→</div>
+                        <div class="process-step catalyst">
+                            <span>Katalizator</span>
+                            <div class="catalyst-layers">
+                                <div class="layer">Pt, Pd, Rh</div>
+                            </div>
+                        </div>
+                        <div class="process-arrow">→</div>
+                        <div class="process-step output">
+                            <span>Chiquvchi gazlar</span>
+                            <div class="gas-molecules">
+                                <span class="gas clean">N₂</span>
+                                <span class="gas clean">CO₂</span>
+                                <span class="gas clean">H₂O</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="molecula" class="molecule-3d-section">
+            <div class="container">
+                <h2 class="section-title">3D Korroziya Molekulasi</h2>
+                <div class="molecule-3d-container">
+                    <div class="molecule-3d-wrapper">
+                        <div class="molecule-3d-scene">
+                            <div class="atom-3d oxygen" data-element="O"></div>
+                            <div class="atom-3d hydrogen" data-element="H"></div>
+                            <div class="atom-3d carbon" data-element="C"></div>
+                            <div class="atom-3d nitrogen" data-element="N"></div>
+                            <div class="atom-3d sulfur" data-element="S"></div>
+                            <div class="atom-3d iron" data-element="Fe"></div>
+                            <div class="atom-3d oxygen-2" data-element="O"></div>
+                            <div class="atom-3d hydrogen-2" data-element="H"></div>
+                            
+                            <div class="bond-3d bond-1"></div>
+                            <div class="bond-3d bond-2"></div>
+                            <div class="bond-3d bond-3"></div>
+                            <div class="bond-3d bond-4"></div>
+                            <div class="bond-3d bond-5"></div>
+                            <div class="bond-3d bond-6"></div>
+                        </div>
+                    </div>
+                    <div class="molecule-info">
+                        <h3>Korroziya Reaktsiyasi</h3>
+                        <div class="reaction-formula">
+                            4Fe + 3O₂ + 6H₂O → 4Fe(OH)₃
+                        </div>
+                        <p>Temirning nam havoda oksidlanishi natijasida korroziya hosil bo'ladi. Bu jarayonda temir atomlari kislorod va suv bilan reaksiyaga kirishib, temir gidroksidini hosil qiladi.</p>
+                        <div class="molecule-controls">
+                            <button class="control-btn" onclick="rotateMolecule()">
+                                <i class="fas fa-sync-alt"></i> Aylantirish
+                            </button>
+                            <button class="control-btn" onclick="resetMolecule()">
+                                <i class="fas fa-undo"></i> Qayta tiklash
+                            </button>
+                            <button class="control-btn" onclick="toggleAnimation()">
+                                <i class="fas fa-play"></i> Animatsiya
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="corrosion-types">
+                    <h3>Korroziya Turlari</h3>
+                    <div class="corrosion-grid">
+                        <div class="corrosion-card">
+                            <div class="corrosion-icon chemical">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <h4>Kimyoviy Korroziya</h4>
+                            <p>Metallarning atrof-muhit kimyoviy ta'sirlari natijasida yemirilishi</p>
+                        </div>
+                        <div class="corrosion-card">
+                            <div class="corrosion-icon electrochemical">
+                                <i class="fas fa-battery-full"></i>
+                            </div>
+                            <h4>Elektrokimyoviy Korroziya</h4>
+                            <p>Elektr tokining ta'siri ostida metallarning yemirilishi</p>
+                        </div>
+                        <div class="corrosion-card">
+                            <div class="corrosion-icon atmospheric">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h4>Atmosfera Korroziyasi</h4>
+                            <p>Havodagi namlik va gazlar ta'sirida yuz beradigan korroziya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="natijalar" class="results-section">
+            <div class="container">
+                <h2 class="section-title">Kutilgan Natijalar</h2>
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-icon">
+                            <i class="fas fa-lungs"></i>
+                        </div>
+                        <h3>Salomatlik Yuqoriligi</h3>
+                        <p>Zararli gazlarning kamayishi nafas olish yo'llari kasalliklarini 40% ga kamaytiradi.</p>
+                    </div>
+                    
+                    <div class="result-card">
+                        <div class="result-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h3>Atmosfera Tozaligi</h3>
+                        <p>CO₂ emissiyasining kamayishi iqlim o'zgarishiga ijobiy ta'sir ko'rsatadi.</p>
+                    </div>
+                    
+                    <div class="result-card">
+                        <div class="result-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3>Iqtisodiy Foyda</h3>
+                        <p>Yoqilg'i tejamkorligi yiliga 1.5 million so'g'liq tejash imkonini beradi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>EcoDrive</h4>
+                    <p>Toza atmosfera uchun birga harakat qilamiz</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Bog'lanish</h4>
+                    <p><i class="fas fa-envelope"></i> info@ecodrive.uz</p>
+                    <p><i class="fas fa-phone"></i> +998 90 123 45 67</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Ijtimoiy tarmoqlar</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EcoDrive. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
